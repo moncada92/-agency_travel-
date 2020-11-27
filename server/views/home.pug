@@ -1,0 +1,34 @@
+extends ./layout/index
+
+block slider
+  .slider
+    h1 Rio de Janeiro
+    em Adventure
+
+block contenido
+  main.container.mt-5
+    h2.text-center.mb-5 About Us
+    .row.mb-5
+      .col-md-6
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit magnam nesciunt, voluptatem quidem obcaecati placeat, quos ullam id voluptate et, quo modi eius odio fuga corrupti. Repellat tempore explicabo vel?
+
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit magnam nesciunt, voluptatem quidem obcaecati placeat, quos ullam id voluptate et, quo modi eius odio fuga corrupti. Repellat tempore explicabo vel?
+      
+      .col-md-6
+        img(src="/img/inicio_nosotros.jpg", alt="nosotros", class="img-fluid")
+      
+    include ./layout/block-travel
+  
+  .descuento
+    .container
+      .row 
+        .col-md-6
+          .contenido
+            h3 5% Sale
+            p.titutlo Travel to Canada
+            p.fecha March 20, 2022 - March 28, 2022
+            p.precio $2,500 USD
+  
+  .container
+    h2.mt-5.text-center Testimonials
+    include ./layout/block-testimonials
